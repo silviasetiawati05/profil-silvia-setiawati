@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Profil Saya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-white text-center position-relative">
+    <div class="container py-5">
+    <h1>Selamat Datang di Profil Pribadi Saya</h1>
+    <p>Web Developer | Designer | Content Creator</p>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="d-flex align-items-center min-vh-100 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- FOTO DI KIRI -->
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <img src="4x6 foto profesional.png" class="img-fluid w-75 rounded" alt="foto profil">
+        </div>
+
+        <!-- TEKS DI KANAN -->
+        <div class="col-md-7 text-md-start text-center">
+          <h1 class="fw-bold">Hai, Saya <span class="text-primary">Silvia Setiawati</span></h1>
+          <p class="lead mt-3">
+            Saya memiliki ketertarikan besar di bidang teknologi, terutama pengembangan website, administrasi, dan data. 
+            Saat ini saya sedang memperdalam kemampuan dalam HTML, CSS, dan JavaScript untuk meningkatkan keterampilan saya di bidang front-end development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Tentang Saya</h2>
+      <p class="mx-auto" style="max-width:700px;">
+        Saya adalah seorang fresh graduate dari jurusan Sistem Informasi dengan pengalaman magang di Puskesmas dan aktif dalam organisasi HIMASI UBSI Karawang. 
+        Saya memiliki kemampuan dalam Microsoft Office, pengelolaan data, serta dasar pemrograman web. 
+        Saya senang belajar hal baru, beradaptasi dengan lingkungan, dan berusaha terus berkembang di dunia digital.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Portofolio</h2>
+      <div id="portfolioCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:900px;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="TOKO FURNITURE.png" class="d-block w-100 rounded shadow" alt="Proyek 1">
+          </div>
+          <div class="carousel-item">
+            <img src="JANPANIK.png" class="d-block w-100 rounded shadow" alt="Proyek 2">
+          </div>
+          <div class="carousel-item">
+            <img src="SIFORMA.png" class="d-block w-100 rounded shadow" alt="Proyek 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Kontak Saya</h2>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Kirim Pesan</button>
+    </div>
+  </section>
+
+  <!-- Modal Kontak -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Formulir Kontak</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan Anda di sini..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Profil Saya. Semua hak dilindungi.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
